@@ -1,0 +1,31 @@
+
+/* THIS IS HOW YOU LEAVE COMMENTS IN CSS */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background:rgba(0,0,255,.7);
+	color:yellow;
+	padding:10px;
+	margin:10px;
+	font-family:tahoma;
+	
+}
+
+#bigWrapper{
+	background:yellow;
+	color:navy;
+	padding:10px;
+	margin:10px;
+	font-family:tahoma;
+}
+
+
+#demo1 sub{
+font-family: 'Tangerine', cursive;
+font-size:30px;
+letter-spacing: 3px;
+}
