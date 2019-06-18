@@ -56,3 +56,11 @@ font-family: 'Tangerine', cursive;
 font-size:30px;
 letter-spacing: 3px;
 }
+
+hr {
+	border-bottom:4px solid navy;
+}
+
+.myShadow {
+	text-shadow: 1px 1px 1px black;
+}
