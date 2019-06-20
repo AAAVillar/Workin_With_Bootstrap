@@ -72,3 +72,7 @@ hr {
 .myBoxShadow{
 	box-shadow: 3px 3px 2px rgba(0,0,0,.7);
 }
+
+.bg-yella {
+	background: rgba(255, 255, 153,.8);
+}
