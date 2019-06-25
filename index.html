@@ -19,6 +19,7 @@
 	<!-- this is my stylesheets -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	
 	
@@ -29,7 +30,7 @@
 <body>
 	<div id = "bigWrapper" class="container">
 
-
+		<h1 id="theTop" class="d-flex course-heading justify-content-center text-white myShadowXXX bg-primary myBorder pb-3 pt-3">The Very Top!</h1>
 		<!-- margins  -->
 		<h3 class="course-heading">Margins</h3>
 		<div class="bg-danger m-0">this is a test (margin: 0px)</div>	
@@ -261,7 +262,7 @@
 
 
 		<!-- Buttons  -->
-		<h3 class="course-heading">Buttons</h3>
+		<h3 id="buttons" class="course-heading">Buttons</h3>
 		<button type = "button" class="btn bg-danger text-white myShadow myBorder myBoxShadow">press it!</button>
 		<button type = "button" class="btn btn-sm bg-success text-white myShadow myBorder myBoxShadow">press it!</button>
 		<button type = "button" class="btn btn-lg bg-primary text-white myShadow myBorder myBoxShadow">press it!</button>
@@ -447,10 +448,28 @@
 
 			</div>  <!-- End of id="collapse_1" Div -->
 		</div>  <!-- End of id="collapseExample" Div -->
+		<hr>
+
+		<!-- Dropdown Content  -->
+		<h3 class="course-heading d-flex justify-content-center mb-5 bg-primary shadow">Dropdown Content</h3>
+
+		<div id="Dropdown_1" class="dropdown">
+			<a href="#"class="btn btn-secondary dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" role="button">Dropdown</a>
+			<div id= "Dropdown_2" class="dropdown-menu">
+				<a href="#bigWrapper" class="dropdown-item">TOP</a>
+				<a href="#buttons" class="dropdown-item">Buttons</a>
+				<a href="#carouselExampleIndicators" class="dropdown-item">Carousel</a>
+			</div>  <!-- End of id="Dropdown_2" Div -->
+		</div>  <!-- End of id="Dropdown_1" Div -->
 
 
 
-
+		<!-- Forms  -->
+		<h3 class="course-heading d-flex justify-content-center mb-5 bg-primary shadow">Forms</h3>
+		<form action="">
+			
+			
+		</form>
 
 
 

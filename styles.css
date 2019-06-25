@@ -50,7 +50,12 @@ body{
 	font-family:tahoma;
 }
 
-
+#theTop{
+	font-family: 'Metal Mania', cursive;
+	letter-spacing: 4px;
+	font-size:80px;
+	font-weight: bolder;	
+}
 #demo1 sub{
 font-family: 'Tangerine', cursive;
 font-size:30px;
@@ -63,6 +68,9 @@ hr {
 
 .myShadow {
 	text-shadow: 1px 1px 1px black;
+}
+.myShadowXXX {
+	text-shadow: 4px 4px 12px rgba(0,0,77,.99);
 }
 
 .myBorder{
