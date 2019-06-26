@@ -114,3 +114,10 @@ hr {
 	text-shadow: 5px 5px 4px black;
 	background: blue;
 }
+
+#spanForm{
+	text-decoration: underline;
+	color:red;
+	text-shadow: 1px 1px 1px black;
+	font-size:1.2rem;
+}

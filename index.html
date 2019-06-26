@@ -18,8 +18,12 @@
 
 	<!-- this is my stylesheets -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- these links are for custom fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+
+	<!-- this link is to link to my style.css file -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	
 	
@@ -387,8 +391,8 @@
 				<div id="car_1" class="carousel-item active">
 					<img class="d-block img-fluid" src="images/lisa_1.png" alt="lisa_1">
 					<div id="carousel-caption_1" class="carousel-caption">
-					<h3 class="d-flex bg-primary myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #1</h3>
-					<p class="d-flex bg-primary lead myShadow justify-content-center myBorder pb-2 border-top-0">She is a Gal for all seasons</p>	
+						<h3 class="d-flex bg-primary myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #1</h3>
+						<p class="d-flex bg-primary lead myShadow justify-content-center myBorder pb-2 border-top-0">She is a Gal for all seasons</p>	
 					</div><!-- End of id="carousel-caption_1" Div -->
 				</div>	<!-- End of id="car_1" Div -->
 
@@ -396,8 +400,8 @@
 				<div id="car_2" class="carousel-item ">
 					<img class="d-block img-fluid" src="images/lisa_2.png" alt="lisa_2">
 					<div id="carousel-caption_2" class="carousel-caption">
-					<h3 class="d-flex bg-success myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #2</h3>
-					<p class="d-flex bg-success lead myShadow justify-content-center myBorder pb-2 border-top-0">She one of a kind...</p>	
+						<h3 class="d-flex bg-success myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #2</h3>
+						<p class="d-flex bg-success lead myShadow justify-content-center myBorder pb-2 border-top-0">She one of a kind...</p>	
 					</div><!-- End of id="carousel-caption_2" Div -->
 				</div>	<!-- End of id="car_2" Div -->
 
@@ -405,8 +409,8 @@
 				<div id="car_3" class="carousel-item ">
 					<img class="d-block img-fluid" src="images/lisa_3.png" alt="lisa_3">
 					<div id="carousel-caption_3" class="carousel-caption">
-					<h3 class="d-flex bg-danger myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #3</h3>
-					<p class="d-flex bg-danger lead myShadow justify-content-center myBorder pb-2 border-top-0">That girl is so dangerous..</p>	
+						<h3 class="d-flex bg-danger myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #3</h3>
+						<p class="d-flex bg-danger lead myShadow justify-content-center myBorder pb-2 border-top-0">That girl is so dangerous..</p>	
 					</div><!-- End of id="carousel-caption_3" Div -->
 				</div>	<!-- End of id="car_3" Div -->
 
@@ -455,7 +459,7 @@
 
 		<div id="Dropdown_1" class="dropdown">
 			<a href="#"class="btn btn-secondary dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" role="button">Dropdown</a>
-			<div id= "Dropdown_2" class="dropdown-menu">
+			<div id= "Dropdown_2" class="dropdown-menu mb-5">
 				<a href="#bigWrapper" class="dropdown-item">TOP</a>
 				<a href="#buttons" class="dropdown-item">Buttons</a>
 				<a href="#carouselExampleIndicators" class="dropdown-item">Carousel</a>
@@ -465,10 +469,25 @@
 
 
 		<!-- Forms  -->
-		<h3 class="course-heading d-flex justify-content-center mb-5 bg-primary shadow">Forms</h3>
-		<form action="">
-			
-			
+		<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">Forms</h2>
+		<form action="" method = "GET">
+			<div id="formId_1" class="form-group">
+				<label for = "email">Email:</label>
+				<input type="email" id= "email" class="form-control" placeholder="enter email" required>
+			</div>  <!-- End of id="formId_1" Div -->
+
+			<div id="formId_2" class="form-group">
+				<label for = "pass">Password:</label>
+				<input type="password" id= "pass" class="form-control" placeholder="enter password" title = "you must fill out this field HUMAN" required>
+			</div>  <!-- End of id="formId_2" Div -->	
+
+			<div id="formId_3" class="form-group form-check">
+				<input type="checkbox" id= "check" class="form-check-input" required>
+				<label for = "check" class="form-check-label">I AM <span id="spanForm">NOT</span> A ROBOT, OR A CYBERNETIC ORGANISM</label>
+			</div>  <!-- End of id="formId_3" Div -->
+			<div class="d-flex justify-content-center ">		
+				<button type = "button" class=" btn bg-danger text-white myShadow myBorder myBoxShadow mb-4 ">Submit it!</button>
+			</div>
 		</form>
 
 
