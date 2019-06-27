@@ -81,6 +81,32 @@ hr {
 	box-shadow: 3px 3px 2px rgba(0,0,0,.7);
 }
 
+.myBoxShadow:hover{
+	box-shadow: 5px 5px 5px rgba(0,0,0,.7);
+}
+
+#input_submit{
+font-size: 1.2rem;
+letter-spacing: .8rem;
+background:red;
+color:white;
+text-shadow: 2px 2px 2px black;
+font-weight: bolder;
+border 3px solid black;
+padding:12px;
+box-shadow: 3px 3px 5px black;
+}
+
+#input_submit:hover{
+font-size: 1.2rem;
+background:black;
+color:yellow;
+font-weight: bolder;
+}
+
+
+
+
 .bg-yella {
 	background: rgba(255, 255, 153,.8);
 }
@@ -120,4 +146,8 @@ hr {
 	color:red;
 	text-shadow: 1px 1px 1px black;
 	font-size:1.2rem;
+}
+
+.bg-maroon {
+	background: rgba(128,0,0,.99);
 }
