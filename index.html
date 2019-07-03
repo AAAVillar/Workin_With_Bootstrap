@@ -32,9 +32,30 @@
 </head>
 <!-- End of div -->
 <body>
-	<div id = "bigWrapper" class="container">
+	<div id = "bigWrapper" class="container-fluid">
 
-		<h1 id="theTop" class="d-flex course-heading justify-content-center text-white myShadowXXX bg-primary myBorder pb-3 pt-3">The Very Top!</h1>
+<!--  Nav  -->
+<h3 class="course-heading">Nav</h3>
+<ul class="nav bg-dark text-white p-0 fixed-top mb-3">
+	<li class="nav-item">
+		<a href="#theTop" class="nav-link">home</a>
+	</li>
+	<li class="nav-item">
+		<a href="#textColors" class="nav-link">Text Colors</a>
+	</li>
+	<li class="nav-item">
+		<a href="#buttons" class="nav-link">Buttons</a>
+	</li>
+	<li class="nav-item">
+		<a href="#Carousel" class="nav-link">Carousel</a>
+	</li>
+	<li class="nav-item">
+		<a href="#demo1" class="nav-link">Today's Date</a>
+	</li>
+</ul>
+
+
+		<h1 id="theTop" class="d-flex course-heading justify-content-center text-white myShadowXXX bg-primary myBorder pb-3 pt-5 mt-4">The Very Top!</h1>
 		<!-- margins  -->
 		<h3 class="course-heading">Margins</h3>
 		<div class="bg-danger m-0">this is a test (margin: 0px)</div>	
@@ -173,7 +194,7 @@
 
 
 		<!-- Text Colors  -->
-		<h3 class="course-heading">Text Colors plus my own custom shadow class</h3>
+		<h3 class="course-heading pt-5" id="textColors">Text Colors plus my own custom shadow class</h3>
 		<p class="text-primary myShadow">text-primary</p>
 		<p class="text-success myShadow">text-success</p>
 		<p class="text-danger myShadow">text-danger</p>
@@ -266,7 +287,7 @@
 
 
 		<!-- Buttons  -->
-		<h3 id="buttons" class="course-heading">Buttons</h3>
+		<h3 id="buttons" class="course-heading pt-5 mt-5">Buttons</h3>
 		<button type = "button" class="btn bg-danger text-white myShadow myBorder myBoxShadow">press it!</button>
 		<button type = "button" class="btn btn-sm bg-success text-white myShadow myBorder myBoxShadow">press it!</button>
 		<button type = "button" class="btn btn-lg bg-primary text-white myShadow myBorder myBoxShadow">press it!</button>
@@ -378,7 +399,7 @@
 
 
 		<!-- Carousel  -->
-		<h3 class="course-heading d-flex justify-content-center mb-5 bg-yella shadow">Carousel of Mona-Lisa</h3>
+		<h3 class="course-heading d-flex justify-content-center mb-5 bg-yella shadow pt-4" id="Carousel">Carousel of Mona-Lisa</h3>
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -470,7 +491,7 @@
 
 		<!-- Forms  -->
 		<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">Forms</h2>
-		<form action="" method = "GET">
+		<form action="" method = "GET" name="form_A1">
 			<div id="formId_1" class="form-group">
 				<label for = "email">Email:</label>
 				<input type="email" id= "email" class="form-control" placeholder="enter email" required>
@@ -494,7 +515,8 @@
 <!-- my custom forms did not shrink well .....I guess that's why they use bootstrap....-->
 <!-- bootstrap did conform to any size window......-->
 <h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">My Forms (snippets)</h2>
-<form id = "form_1" action = "#" method = "GET" class="bg-maroon text-white myShadow p-5">
+<!-- you can name your form .....name attribute  -->
+<form id = "form_1" action = "#" method = "GET" class="bg-maroon text-white myShadow p-5" name= "myForm_1">
   <fieldset id = "fieldset_1" class="bg-primary text-white myShadow">
     <legend id = "legend_1" class="bg-success text-white myShadow p-3 myBorder" align="center">New User Signup</legend>
 	<pre>
@@ -515,6 +537,83 @@
   </fieldset>
 </form>
 
+<hr>
+<!--  Jumbotron  -->
+<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">This will be Jumbotron</h2>
+<div class="jumbotron bg-bluey myBorder">
+	<h1 class="display-4 d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow myBorder">I'm a Jumbotron</h1>
+	<h2>Isaiah 26:3-4</h2>
+<p>
+ 3  You keep him in perfect peace
+whose mind is stayed on you,
+because he trusts in you. 
+ 4 Trust in the LORD forever,
+                       for the LORDGOD is an everlasting rock. </p>					
+</div>   <!-- class="jumbotron bg-bluey myBorder" Div -->
+
+<hr>
+
+<div class="row">
+	<div class="col-sm-12">
+		<div id= "my-slider" class="carousel slide" data-ride="carousel">
+			<!-- indicators dot nav  -->
+
+			<!-- wrapper for slides  -->
+			<div class="carousel-inner" role="listbox">
+				<div id= "slide_1" class="item active" >
+					<img src="images/lady_lake_1.png" alt="images modified by Gimp">	
+					<div id= "textID_slider_1" class="carousel-caption" >
+						<h2>this is the first slider</h2>
+					</div>  <!-- End of id= "textID_slider_1" Div -->
+				</div>  <!-- End of id= "slide_1" Div -->
+				<div id= "slide_1" class="item " >
+					<img src="images/lady_lake_2.png" alt="images modified by Gimp">	
+					<div id= "textID_slider_1" class="carousel-caption" >
+						<h2>this is the first slider</h2>
+					</div>  <!-- End of id= "textID_slider_1" Div -->
+				</div>  <!-- End of id= "slide_1" Div -->
+				<div id= "slide_1" class="item " >
+					<img src="images/lady_lake_3.png" alt="images modified by Gimp">	
+					<div id= "textID_slider_1" class="carousel-caption" >
+						<h2>this is the first slider</h2>
+					</div>  <!-- End of id= "textID_slider_1" Div -->
+				</div>  <!-- End of id= "slide_1" Div -->
+				<div id= "slide_1" class="item " >
+					<img src="images/lady_lake_4.png" alt="images modified by Gimp">	
+					<div id= "textID_slider_1" class="carousel-caption" >
+						<h2>this is the first slider</h2>
+					</div>  <!-- End of id= "textID_slider_1" Div -->
+				</div>  <!-- End of id= "slide_1" Div -->
+
+
+
+			</div>  <!-- End of class="carousel-inner" role="listbox" Div -->
+
+
+
+
+
+			<!-- controls or next & prev buttons  -->
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>  <!-- End of class="col-sm-12"  -->						
+</div>  <!-- End of class="row"  -->	
+
+
+
+
+
 
 
 
@@ -530,12 +629,12 @@
 
 
 	</div><!-- End of bigWrapper div -->
-	<div class="container">
+	<div class="container-fluid">
 
 		<!-- the mark element in html is highlighted  -->
 		<h1>Highlight Text</h1>    
 		<p>Use the mark element to <mark>highlight</mark> text.</p>
-	</div>
+	</div>  <!-- End of container-fluid  -->
 	<h3 id = "demo1">test</h3>
 	<script src = "main.js"></script>
 </body>
