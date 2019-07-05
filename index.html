@@ -26,7 +26,13 @@
 	<!-- this link is to link to my style.css file -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	
-	
+	<!-- my Icons for the nav bar -->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<!-- <i class='fas fa-link' style='font-size:24px'></i>  <- links icon -->
+	<!-- <i class='fas fa-hand-middle-finger' style='font-size:24px'></i> <- middle finger icon -->
+	<!-- <i class='fas fa-poo' style='font-size:24px'></i>  <- poo icon -->
+	<!--<i class='fas fa-poop' style='font-size:24px'></i>  <- poop icon -->
+
 	<title>Workin_With_Bootstrap</title>
 	
 </head>
@@ -35,22 +41,25 @@
 	<div id = "bigWrapper" class="container-fluid">
 
 <!--  Nav  -->
-<h3 class="course-heading">Nav</h3>
+
 <ul class="nav bg-dark text-white p-0 fixed-top mb-3">
 	<li class="nav-item">
-		<a href="#theTop" class="nav-link">home</a>
+		<a href="#theTop" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
 	</li>
 	<li class="nav-item">
-		<a href="#textColors" class="nav-link">Text Colors</a>
+		<a href="#textColors" class="nav-link text-danger"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
 	</li>
 	<li class="nav-item">
-		<a href="#buttons" class="nav-link">Buttons</a>
+		<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
 	</li>
 	<li class="nav-item">
-		<a href="#Carousel" class="nav-link">Carousel</a>
+		<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
 	</li>
 	<li class="nav-item">
-		<a href="#demo1" class="nav-link">Today's Date</a>
+		<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+	</li>
+	<li class="nav-item">
+		<a href="#demo1" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
 	</li>
 </ul>
 
@@ -411,27 +420,31 @@
 
 				<div id="car_1" class="carousel-item active">
 					<img class="d-block img-fluid" src="images/lisa_1.png" alt="lisa_1">
+					
 					<div id="carousel-caption_1" class="carousel-caption">
-						<h3 class="d-flex bg-primary myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #1</h3>
-						<p class="d-flex bg-primary lead myShadow justify-content-center myBorder pb-2 border-top-0">She is a Gal for all seasons</p>	
+						<p class="d-flex bg-primary myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #1</p>
+						<p class="d-flex bg-primary myShadow justify-content-center myBorder pb-0 border-top-0">She is a Gal for all seasons</p>	
 					</div><!-- End of id="carousel-caption_1" Div -->
+
 				</div>	<!-- End of id="car_1" Div -->
 
 
 				<div id="car_2" class="carousel-item ">
 					<img class="d-block img-fluid" src="images/lisa_2.png" alt="lisa_2">
+					
 					<div id="carousel-caption_2" class="carousel-caption">
-						<h3 class="d-flex bg-success myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #2</h3>
-						<p class="d-flex bg-success lead myShadow justify-content-center myBorder pb-2 border-top-0">She one of a kind...</p>	
-					</div><!-- End of id="carousel-caption_2" Div -->
+						<p class="d-flex bg-success myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #2</p>
+						<p class="d-flex bg-success  myShadow justify-content-center myBorder pb-0 border-top-0">She one of a kind...</p>	
+					</div> <!-- End of id="carousel-caption_2" Div -->
 				</div>	<!-- End of id="car_2" Div -->
 
 
 				<div id="car_3" class="carousel-item ">
 					<img class="d-block img-fluid" src="images/lisa_3.png" alt="lisa_3">
+					
 					<div id="carousel-caption_3" class="carousel-caption">
-						<h3 class="d-flex bg-danger myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #3</h3>
-						<p class="d-flex bg-danger lead myShadow justify-content-center myBorder pb-2 border-top-0">That girl is so dangerous..</p>	
+						<p class="d-flex bg-danger myShadow justify-content-center myBorder pt-1 mb-0 border-bottom-0">Mona-Lisa #3</p>
+						<p class="d-flex bg-danger  myShadow justify-content-center myBorder pb-0 border-top-0">That girl is so dangerous..</p>	
 					</div><!-- End of id="carousel-caption_3" Div -->
 				</div>	<!-- End of id="car_3" Div -->
 
@@ -553,6 +566,7 @@ because he trusts in you.
 
 <hr>
 
+<!-- carousel from another teacher -->
 <div class="row">
 	<div class="col-sm-12">
 		<div id= "my-slider" class="carousel slide" data-ride="carousel">
@@ -610,9 +624,27 @@ because he trusts in you.
 	</div>  <!-- End of class="col-sm-12"  -->						
 </div>  <!-- End of class="row"  -->	
 
-
-
-
+<hr>
+<!-- nav -->
+<h2 id="theBottom" class="course-heading  d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow myBorder"><i class='fas fa-socks' style='font-size:24px'></i>-*footer </h2>
+<ul class="nav bg-white  myShadow myBorder">
+	<li class="nav-item">
+		<a href="#theTop" class="nav-link text-dark"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+	</li>
+	<li class="nav-item">
+		<a href="#textColors" class="nav-link text-danger myShadow"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+	</li>
+	<li class="nav-item">
+		<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
+	</li>
+	<li class="nav-item">
+		<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+	</li>
+	<li class="nav-item">
+		<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+	</li>
+	
+</ul>
 
 
 

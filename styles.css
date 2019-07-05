@@ -54,7 +54,16 @@ body{
 	font-family: 'Metal Mania', cursive;
 	letter-spacing: 4px;
 	font-size:80px;
-	font-weight: bolder;	
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px black;	
+}
+#theBottom{
+font-family: 'Metal Mania', cursive;
+	letter-spacing: 4px;
+	font-size:50px;
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px black;	
+
 }
 #demo1 sub{
 font-family: 'Tangerine', cursive;
@@ -154,4 +163,8 @@ font-weight: bolder;
 
 .bg-bluey{
 	background: rgba(73,116,150,.99);
+}
+.text-lime{
+	color:rgba(104,253,100,.99);
+
 }
