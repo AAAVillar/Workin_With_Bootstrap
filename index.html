@@ -40,28 +40,28 @@
 <body>
 	<div id = "bigWrapper" class="container-fluid">
 
-<!--  Nav  -->
+		<!--  Nav  -->
 
-<ul class="nav bg-dark text-white p-0 fixed-top mb-3">
-	<li class="nav-item">
-		<a href="#theTop" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
-	</li>
-	<li class="nav-item">
-		<a href="#textColors" class="nav-link text-danger"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
-	</li>
-	<li class="nav-item">
-		<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
-	</li>
-	<li class="nav-item">
-		<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
-	</li>
-	<li class="nav-item">
-		<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
-	</li>
-	<li class="nav-item">
-		<a href="#demo1" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
-	</li>
-</ul>
+		<ul class="nav justify-content-center bg-dark text-white p-0 fixed-top mb-3">  
+			<li class="nav-item">
+				<a href="#theTop" class="nav-link text-white"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#textColors" class="nav-link text-danger"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+			</li>
+			<li class="nav-item">
+				<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
+			</li>
+			<li class="nav-item">
+				<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+			</li>
+			<li class="nav-item">
+				<a href="#ActionForms" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+			</li>
+			<li class="nav-item">
+				<a href="#demo1" class="nav-link text-white"><i class='fas fa-socks' style='font-size:24px'></i> Footer &amp; Today's Date</a>
+			</li>
+		</ul>
 
 
 		<h1 id="theTop" class="d-flex course-heading justify-content-center text-white myShadowXXX bg-primary myBorder pb-3 pt-5 mt-4">The Very Top!</h1>
@@ -408,7 +408,7 @@
 
 
 		<!-- Carousel  -->
-		<h3 class="course-heading d-flex justify-content-center mb-5 bg-yella shadow pt-4" id="Carousel">Carousel of Mona-Lisa</h3>
+		<h3 class="course-heading d-flex justify-content-center mb-0 bg-yella shadow pt-4" id="Carousel">Carousel of Mona-Lisa</h3>
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -503,7 +503,7 @@
 
 
 		<!-- Forms  -->
-		<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">Forms</h2>
+		<h2 id="ActionForms" class="course-heading d-flex justify-content-center mb-5 mt-5 pt-5 pb-4 bg-primary text-white myShadow">Forms</h2>
 		<form action="" method = "GET" name="form_A1">
 			<div id="formId_1" class="form-group">
 				<label for = "email">Email:</label>
@@ -524,144 +524,296 @@
 			</div>
 		</form>
 
-<!-- My Forms  -->
-<!-- my custom forms did not shrink well .....I guess that's why they use bootstrap....-->
-<!-- bootstrap did conform to any size window......-->
-<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">My Forms (snippets)</h2>
-<!-- you can name your form .....name attribute  -->
-<form id = "form_1" action = "#" method = "GET" class="bg-maroon text-white myShadow p-5" name= "myForm_1">
-  <fieldset id = "fieldset_1" class="bg-primary text-white myShadow">
-    <legend id = "legend_1" class="bg-success text-white myShadow p-3 myBorder" align="center">New User Signup</legend>
-	<pre>
-	<h3 class="text-white myShadow">
-              Name:<input id = "input_name" type="text" class = "myBorder" name = "fname"   value = ""  autocomplete = "off"  required><br>
+
+		<hr>
+		<!--  Jumbotron  -->
+		<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">This will be Jumbotron</h2>
+		<div class="jumbotron bg-bluey myBorder">
+			<h1 class="display-4 d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow myBorder">I'm a Jumbotron</h1>
+			<h2>Isaiah 26:3-4</h2>
+			<p>
+				3  You keep him in perfect peace
+				whose mind is stayed on you,
+				because he trusts in you. 
+				4 Trust in the LORD forever,
+			for the LORDGOD is an everlasting rock. </p>					
+		</div>   <!-- class="jumbotron bg-bluey myBorder" Div -->
+
+		<hr>
+
+		<!-- carousel from another teacher -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div id= "my-slider" class="carousel slide" data-ride="carousel">
+					<!-- indicators dot nav  -->
+
+					<!-- wrapper for slides  -->
+					<div class="carousel-inner" role="listbox">
+						<div id= "slide_1" class="item active" >
+							<img src="images/lady_lake_1.png" alt="images modified by Gimp">	
+							<div id= "textID_slider_1" class="carousel-caption" >
+								<h2>this is the first slider</h2>
+							</div>  <!-- End of id= "textID_slider_1" Div -->
+						</div>  <!-- End of id= "slide_1" Div -->
+						<div id= "slide_1" class="item " >
+							<img src="images/lady_lake_2.png" alt="images modified by Gimp">	
+							<div id= "textID_slider_1" class="carousel-caption" >
+								<h2>this is the first slider</h2>
+							</div>  <!-- End of id= "textID_slider_1" Div -->
+						</div>  <!-- End of id= "slide_1" Div -->
+						<div id= "slide_1" class="item " >
+							<img src="images/lady_lake_3.png" alt="images modified by Gimp">	
+							<div id= "textID_slider_1" class="carousel-caption" >
+								<h2>this is the first slider</h2>
+							</div>  <!-- End of id= "textID_slider_1" Div -->
+						</div>  <!-- End of id= "slide_1" Div -->
+						<div id= "slide_1" class="item " >
+							<img src="images/lady_lake_4.png" alt="images modified by Gimp">	
+							<div id= "textID_slider_1" class="carousel-caption" >
+								<h2>this is the first slider</h2>
+							</div>  <!-- End of id= "textID_slider_1" Div -->
+						</div>  <!-- End of id= "slide_1" Div -->
+
+
+
+					</div>  <!-- End of class="carousel-inner" role="listbox" Div -->
+
+
+
+
+
+					<!-- controls or next & prev buttons  -->
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>  <!-- End of class="col-sm-12"  -->						
+		</div>  <!-- End of class="row"  -->	
+
+		<hr>
 		
-             Email:<input id = "input_email" type="text" class = "myBorder" name = "email"   value = ""  autocomplete = "off" required><br>
-	
-          password:<input id = "input_pass" type="password" class = "myBorder" name = "password" value = "" autocomplete = "off" required><br>
-	
-	 telephone:<input id = "input_phone" type="text" class = "myBorder" name = "phone"   value = "" autocomplete = "off" required><br>
-	
-      profile slug:<input id = "input_slug" type="text" class = "myBorder" name = "slug"    value = ""  autocomplete = "off" required><br>
-	
-	  <input id = "input_submit" type="submit" value="Submit" title="Submit your Info">
-	 </h3> 
-	</pre>  
-  </fieldset>
-</form>
 
-<hr>
-<!--  Jumbotron  -->
-<h2 class="course-heading d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow">This will be Jumbotron</h2>
-<div class="jumbotron bg-bluey myBorder">
-	<h1 class="display-4 d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow myBorder">I'm a Jumbotron</h1>
-	<h2>Isaiah 26:3-4</h2>
-<p>
- 3  You keep him in perfect peace
-whose mind is stayed on you,
-because he trusts in you. 
- 4 Trust in the LORD forever,
-                       for the LORDGOD is an everlasting rock. </p>					
-</div>   <!-- class="jumbotron bg-bluey myBorder" Div -->
 
-<hr>
+		<!-- this is the NavBar Section  -->
+		<h3 class="course-heading">Navbar</h3>
 
-<!-- carousel from another teacher -->
-<div class="row">
-	<div class="col-sm-12">
-		<div id= "my-slider" class="carousel slide" data-ride="carousel">
-			<!-- indicators dot nav  -->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<a href="#" class="navbar-brand">Navbar</a>
 
-			<!-- wrapper for slides  -->
-			<div class="carousel-inner" role="listbox">
-				<div id= "slide_1" class="item active" >
-					<img src="images/lady_lake_1.png" alt="images modified by Gimp">	
-					<div id= "textID_slider_1" class="carousel-caption" >
-						<h2>this is the first slider</h2>
-					</div>  <!-- End of id= "textID_slider_1" Div -->
-				</div>  <!-- End of id= "slide_1" Div -->
-				<div id= "slide_1" class="item " >
-					<img src="images/lady_lake_2.png" alt="images modified by Gimp">	
-					<div id= "textID_slider_1" class="carousel-caption" >
-						<h2>this is the first slider</h2>
-					</div>  <!-- End of id= "textID_slider_1" Div -->
-				</div>  <!-- End of id= "slide_1" Div -->
-				<div id= "slide_1" class="item " >
-					<img src="images/lady_lake_3.png" alt="images modified by Gimp">	
-					<div id= "textID_slider_1" class="carousel-caption" >
-						<h2>this is the first slider</h2>
-					</div>  <!-- End of id= "textID_slider_1" Div -->
-				</div>  <!-- End of id= "slide_1" Div -->
-				<div id= "slide_1" class="item " >
-					<img src="images/lady_lake_4.png" alt="images modified by Gimp">	
-					<div id= "textID_slider_1" class="carousel-caption" >
-						<h2>this is the first slider</h2>
-					</div>  <!-- End of id= "textID_slider_1" Div -->
-				</div>  <!-- End of id= "slide_1" Div -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="myNavBar">
+				<ul class="navbar-nav bg-white  myShadow myBorder">
+					<li class="nav-item">
+						<a href="#theTop" class="nav-link text-dark"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#textColors" class="nav-link text-danger myShadow"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+					</li>
+					<li class="nav-item">
+						<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+					</li>
+					<li class="nav-item">
+						<a href="#ActionForms" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Grid -->
+		<h3 class="course-heading">Grid System</h3>
+
+		<!-- Full width column -->
+		<div class="row myBorder">
+			<div class="col-12 bg-primary p-2 text-white">
+				<h2>this is 12 columns wide</h2>
+			</div>						
+		</div>
+
+		<!-- 12 columns divided by  2-->
+		<div class="row myBorder">
+			<div class="col-6 bg-danger p-2 text-white">
+				<h2>this is 6 columns wide</h2>
+			</div>
+			<div class="col-6 bg-success p-2 text-white">
+				<h2>this is 6 columns wide</h2>
+			</div>
+		</div>
 
 
 
-			</div>  <!-- End of class="carousel-inner" role="listbox" Div -->
-
-
-
-
-
-			<!-- controls or next & prev buttons  -->
+		<!-- 12 columns divided by 3-->
+		<div class="row myBorder">
+			<div class="col-4 bg-danger p-2 text-white">
+				<h2>this is 4 columns wide</h2>
+			</div>
+			<div class="col-4 bg-success p-2 text-white">
+				<h2>this is 4 columns wide</h2>
+			</div>
+			<div class="col-4 bg-warning p-2 text-white">
+				<h2>this is 4 columns wide</h2>
+			</div>
+		</div>
 
 
 
 
+		<!--12 columns divided by 4-->
+		<div class="row myBorder">
+			<div class="col-3 bg-danger p-2 text-white">
+				<h3>this is 3 columns wide</h3>
+			</div>
+			<div class="col-3 bg-success p-2 text-white">
+				<h3>this is 3 columns wide</h3>
+			</div>
+			<div class="col-3 bg-warning p-2 text-white">
+				<h3>this is 3 columns wide</h3>
+			</div>
+			<div class="col-3 bg-info p-2 text-white">
+				<h3>this is 3 columns wide</h3>
+			</div>
+		</div>
 
 
 
 
+		<!-- 12 columns divided by 6-->
 
+		<div class="row myBorder">
+			<div class="col-2 bg-danger p-2 text-white">
+				<h3>this is 2 columns wide</h3>
+			</div>
+			<div class="col-2 bg-success p-2 text-white">
+				<h3>this is 2 columns wide</h3>
+			</div>
+			<div class="col-2 bg-warning myShadow p-2 text-white">
+				<h3>this is 2 columns wide</h3>
+			</div>
+			<div class="col-2 bg-primary p-2 text-white">
+				<h3>this is 2 columns wide</h3>
+			</div>
+			<div class="col-2 bg-inverse myShadow p-2 text-white">
+				<h3>this is 2 columns wide</h3>
+			</div>
+			<div class="col-2 bg-secondary p-2 text-white">
+				<h3>this is 2 columns wide</h3>
+			</div>
+		</div>
 
+		<!-- 12 columns divided by 1-->
+		<div class="row myBorder">
+			<div class="col-1 bg-danger p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-success p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-warning myShadow p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-primary p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-inverse myShadow p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-secondary p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-danger p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-success p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-warning myShadow p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-primary p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-inverse myShadow p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-secondary p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+		</div>
 
+		<div class="row myBorder">
+			<div class="col-6 bg-success p-2 text-white">
+				<h2>this is 6 columns wide</h2>
+			</div>
+			<div class="col-1 bg-danger p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-success p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-warning myShadow p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-primary p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-inverse myShadow p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
+			<div class="col-1 bg-secondary p-2 text-white">
+				<h5>this is 1 columns wide</h5>
+			</div>
 
 		</div>
-	</div>  <!-- End of class="col-sm-12"  -->						
-</div>  <!-- End of class="row"  -->	
 
-<hr>
-<!-- nav -->
-<div class="jumbotron m-0 p-0">
-<h2 id="theBottom" class="course-heading  d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow myBorder"><i class='fas fa-socks' style='font-size:24px'></i>-*footer </h2>
-</div> <!-- end of Jumbotron -->
-<ul class="nav bg-white  myShadow myBorder">
-	<li class="nav-item">
-		<a href="#theTop" class="nav-link text-dark"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
-	</li>
-	<li class="nav-item">
-		<a href="#textColors" class="nav-link text-danger myShadow"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
-	</li>
-	<li class="nav-item">
-		<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
-	</li>
-	<li class="nav-item">
-		<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
-	</li>
-	<li class="nav-item">
-		<a href="#form_1" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
-	</li>
-	
-</ul>
+		<!-- responsive -->
+		<div class="row mb-2">
+			<div class="col-8 col-sm-12 col-md-2 col-lg-6 bg-primary">
+		<h1 class="m-auto">column a</h1>
+			</div>
+			<div class="col-4 col-sm-2 col-md-10 bg-secondary">
+				<h1 class="m-auto">column b</h1>
+			</div>
+		</div>
 
 
 
+		<!--footer nav -->
+		<div class="jumbotron m-0 p-0">
+			<h2 id="theBottom" class="course-heading  d-flex justify-content-center mb-5 mt-5 pt-4 pb-5 bg-primary text-white myShadow myBorder"><i class='fas fa-socks' style='font-size:24px'></i>-*footer </h2>
+		</div> <!-- end of Jumbotron -->
+		<ul class="nav bg-white  myShadow myBorder">
+			<li class="nav-item">
+				<a href="#theTop" class="nav-link text-dark"><i class='fas fa-home' style='font-size:24px'></i> Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#textColors" class="nav-link text-danger myShadow"><i class='fas fa-palette' style='font-size:24px'></i> Text Colors</a>
+			</li>
+			<li class="nav-item">
+				<a href="#buttons" class="nav-link"><i class='fas fa-bullseye' style='font-size:24px'></i> Buttons</a>
+			</li>
+			<li class="nav-item">
+				<a href="#Carousel" class="nav-link text-lime"><i class='far fa-images' style='font-size:24px'></i> Carousel</a>
+			</li>
+			<li class="nav-item">
+				<a href="#ActionForms" class="nav-link text-warning myShadow "><i class='far fa-edit' style='font-size:24px'></i>Forms</a>
+			</li>
 
-
-
-
-
-
-
-
-
-
-
-
+		</ul>
 	</div><!-- End of bigWrapper div -->
 	<div class="container-fluid">
 
